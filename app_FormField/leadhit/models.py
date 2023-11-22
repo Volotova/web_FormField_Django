@@ -27,6 +27,9 @@ def forma():
             d.update(id)
             d.pop('text')
             d.pop('name')
+            d['date'] = 'datetime'
+            d['phone'] = 'str'
+            d['email'] = 'str'
             return json.dumps(d, indent=4)
 
 
